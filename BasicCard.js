@@ -1,9 +1,6 @@
-// basic flashcard generator
-var firstPresident = new BasicCard(
-    "Who was the first president of the United States?", "George Washington");
 
-// "Who was the first president of the United States?"
-console.log(firstPresident.front); 
-
-// "George Washington"
-console.log(firstPresident.back); 
+// define the basic card constructor
+module.exports = function(front, back){
+	this.front = front;
+	this.back = back;
+};

@@ -1,0 +1,19 @@
+{
+  "name": "flashcard-generator",
+  "version": "1.0.0",
+  "description": "UCF Coding Bootcamp Node project",
+  "main": "runBasic.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/therealtimetourist/Flashcard-Generator.git"
+  },
+  "author": "Don Bedwell: timetourst@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/therealtimetourist/Flashcard-Generator/issues"
+  },
+  "homepage": "https://github.com/therealtimetourist/Flashcard-Generator#readme"
+}
