@@ -49,7 +49,7 @@ function addQuestion(){
 		{
 			type: "confirm",
 			name: "confirmStartGame",
-			message: "Would you like to see a random question now?"
+			message: "Would you like to see the questions and answers listed now?"
 		}
 		]).then(function(confirm){
 			if(confirm.confirmStartGame){
@@ -57,7 +57,7 @@ function addQuestion(){
 	      			arrBasicQuestions[i].printInfo();
 	    		}
 			}else{
-				console.log("fine then!");
+				console.log("fine then, I'm out!");
 			}
 	    });
 	}
