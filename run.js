@@ -22,7 +22,7 @@ ClozeCard.prototype.printInfo = function() {
 
 // question count
 var count = 0;
-var maxcount = 8;
+var maxcount = 5;
 // question objects array
 var arrQuestions = [];
 // loop to max question count
