@@ -18,17 +18,11 @@ ClozeCard.prototype.printInfo = function() {
   console.log("---------------");
 };
 
-ClozeCard.partial = function() {
-	if(cards.fullText.includes(cards.cloze)){
-		cards.fullText.replace(cards.cloze, " . . . ");
-	} else{
-		cards.cloze + " is not found in " + cards.fullText;
-	}
-}
+
 
 // question count
 var count = 0;
-var maxcount = 10;
+var maxcount = 1;
 // question objects array
 var arrQuestions = [];
 // loop to max question count
@@ -110,10 +104,10 @@ function addClozeQuestion(){
 		// initialize new card instance
 		var card = new ClozeCard(
 			cards.fullText,
-			cards.cloze
-			//cards.partial
+			cards.cloze,
+			cards.partial
 		);
-
+		
 		// error check for blank entries
 		if(cards.front === "" || cards.back === ""){
 			console.log("blank answers are not allowed. Please try again");
